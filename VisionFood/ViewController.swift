@@ -46,7 +46,17 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
                 fatalError("No results")
             }
             
-            print(results)
+            if let firstResult = results.first{
+                if let range = firstResult.identifier.range(of: ",") {
+                    let result = String(firstResult.identifier[..<range.lowerBound])
+                    self.navigationController?.title = result
+                    print(result)
+                }
+                else{
+                    self.navigationController?.title = "Try Again"
+                    print("error adding the most predicted item")
+                }
+            }
         }
         
         let handler = VNImageRequestHandler(ciImage: image)

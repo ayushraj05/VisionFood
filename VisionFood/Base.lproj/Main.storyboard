@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Click a Photo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VisionFood" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,8 +29,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IpG-7P-Z1m" secondAttribute="bottom" id="tmE-bu-nZy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Dkv-v8-RPU">
+                    <navigationItem key="navigationItem" title="Click a Photo" id="Dkv-v8-RPU">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="UM5-La-BMe">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="cameraPressed:" destination="BYZ-38-t0r" id="reL-jU-He1"/>
                             </connections>
@@ -52,6 +53,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="f90-dS-3Xt">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -66,6 +71,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
